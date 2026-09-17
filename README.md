@@ -4,7 +4,7 @@
 
 Selamat! Kamu baru saja diterima sebagai **Junior Frontend Developer** di **PT Maju Jaya**, sebuah perusahaan yang sedang mengembangkan sistem internal untuk operasional kantor.
 
-Di hari pertama kerja, kamu diperkenalkan dengan **Fikri**, Lead Software Engineer di tim kamu. Fikri akan jadi orang yang me-review setiap pekerjaan yang kamu kirim sebelum masuk ke sistem utama perusahaan.
+Di hari pertama kerja, kamu diperkenalkan dengan **Fikri** seorang Lead Software Engineer di tim kamu. Fikri akan jadi orang yang me-review setiap pekerjaan yang kamu kirim sebelum masuk ke sistem utama perusahaan.
 
 > **Fikri:** "Selamat datang di tim! Hari ini kita mulai dari project kecil dulu ya — sistem absensi karyawan yang lagi kita kembangkan. Base code-nya udah aku siapin, kamu tinggal lanjutin salah satu bagian yang masih kurang. Tapi sebelum ngoding, ada beberapa SOP tim yang wajib kamu ikutin. Aku jelasin dulu ya."
 
