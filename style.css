@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #2d3436;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #2c3e50;
+    font-size: 28px;
+}
+
+.subtitle {
+    color: #7f8c8d;
+    margin-top: 5px;
+}
+
+.form-section,
+.table-section {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2,
+.table-section h2 {
+    margin-bottom: 16px;
+    font-size: 18px;
+    color: #2c3e50;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 8px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #dcdde1;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.btn-submit {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #2980b9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 10px 8px;
+    border-bottom: 1px solid #ecf0f1;
+    font-size: 14px;
+}
+
+th {
+    color: #7f8c8d;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-hadir {
+    background-color: #d5f5e3;
+    color: #1e8449;
+}
+
+.status-izin {
+    background-color: #fef9e7;
+    color: #b7950b;
+}
+
+.status-sakit {
+    background-color: #ebdef0;
+    color: #7d3c98;
+}
+
+.status-alpa {
+    background-color: #fadbd8;
+    color: #c0392b;
+}
+
+.btn-hapus {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.btn-hapus:hover {
+    background-color: #c0392b;
+}
+
+.empty-state {
+    text-align: center;
+    color: #95a5a6;
+    padding: 20px 0;
+    font-size: 14px;
+}
