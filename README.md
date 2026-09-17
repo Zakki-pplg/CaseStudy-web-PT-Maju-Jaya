@@ -111,4 +111,4 @@ Setelah fitur selesai dan sudah kamu tes langsung di browser (pastikan tidak ada
 - [ ] Minimal ada 3 commit dengan pesan yang jelas dan menjelaskan perubahannya
 - [ ] Branch `main` tidak tersentuh sama sekali oleh perubahan kode
 
-Selamat mengerjakan! 🚀
+Selamat mengerjakan, Good Luck! 🚀
