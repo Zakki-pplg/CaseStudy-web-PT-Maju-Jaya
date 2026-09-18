@@ -71,6 +71,7 @@ formAbsensi.addEventListener("submit", function (e) {
   formAbsensi.reset();
 });
 
+
 function hapusData(index) {
     dataAbsensi.splice(index, 1);
     simpanKeStorage();
