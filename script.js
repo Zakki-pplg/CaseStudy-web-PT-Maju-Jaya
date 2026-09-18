@@ -185,26 +185,6 @@ formAbsensi.addEventListener(
 
 function hapusData(index) {
 
-    // Pastikan index valid
-    if (
-        index < 0 ||
-        index >= dataAbsensi.length
-    ) {
-        return;
-    }
-
-
-    // Hapus data berdasarkan index
-    dataAbsensi.splice(index, 1);
-
-
-    // Simpan perubahan ke localStorage
-    simpanKeStorage();
-
-
-    // Perbarui tampilan tabel
-    renderTabel();
-
 }
 
 
