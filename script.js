@@ -74,8 +74,8 @@ formAbsensi.addEventListener("submit", function (e) {
 
 function hapusData(index) {
   dataAbsensi.splice(index, 1);
+  simpanKeStorage();
 }
-
 
 // Render tabel pertama kali saat halaman dibuka
 renderTabel();
