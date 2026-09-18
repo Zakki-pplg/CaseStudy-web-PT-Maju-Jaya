@@ -92,7 +92,7 @@ formAbsensi.addEventListener("submit", function (e) {
 
 
 function hapusData(index) {
-    /dataAbsensi.splice(index, 1);
+    dataAbsensi.splice(index, 1);
     simpanKeStorage();
     renderTabel();
 / Hapus data absensi pada index yang diberikan
