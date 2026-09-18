@@ -95,7 +95,6 @@ function hapusData(index) {
     dataAbsensi.splice(index, 1);
     simpanKeStorage();
     renderTabel();
-/ Hapus data absensi pada index yang diberikan
 }
 
 // Render tabel pertama kali saat halaman dibuka
