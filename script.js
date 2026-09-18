@@ -1,6 +1,7 @@
 // ===========================================
 // SISTEM ABSENSI KARYAWAN - PT MAJU JAYA
-// ===========================================
+// ==============================
+// =============
 
 // Key untuk menyimpan data di localStorage browser
 const STORAGE_KEY = "absensiData";
