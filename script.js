@@ -24,7 +24,7 @@ function getStatusClass(status) {
     Hadir: "status-hadir",
     Izin: "status-izin",
     Sakit: "status-sakit",
-    Alpa: "status-alpa",
+    Alpa: "status-alpa"
   };
   return map[status] || "";
 }
