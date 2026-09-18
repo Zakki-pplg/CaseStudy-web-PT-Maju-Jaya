@@ -71,29 +71,10 @@ formAbsensi.addEventListener("submit", function (e) {
   formAbsensi.reset();
 });
 
-// ===========================================
-// TUGAS KAMU DI SINI!
-// ===========================================
-// Fungsi hapusData() ini dipanggil setiap tombol "Hapus" di tabel diklik,
-// dan sudah menerima parameter `index` (posisi data di array dataAbsensi).
-// Tapi isi fungsinya masih kosong alias belum berfungsi sama sekali.
-//
-// Tugas kamu: lengkapi fungsi ini supaya bisa MENGHAPUS data absensi
-// sesuai index yang diklik, lalu memperbarui tampilan tabel.
-//
-// Hint:
-// 1. Gunakan method array seperti splice() untuk menghapus 1 item
-//    dari array dataAbsensi berdasarkan index-nya
-// 2. Jangan lupa panggil simpanKeStorage() supaya perubahan
-//    tersimpan permanen di localStorage
-// 3. Jangan lupa panggil renderTabel() supaya tabel di layar
-//    ikut ter-update setelah data dihapus
-//
-
 function hapusData(index) {
-  dataAbsensi.splice(index, 1);
-  simpanKeStorage();
-  renderTabel();
+    dataAbsensi.splice(index, 1);
+    simpanKeStorage();
+    renderTabel();
 }
 
 // Render tabel pertama kali saat halaman dibuka
