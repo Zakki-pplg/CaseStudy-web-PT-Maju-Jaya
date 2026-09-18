@@ -1,6 +1,7 @@
 // ===========================================
 // SISTEM ABSENSI KARYAWAN - PT MAJU JAYA
-// ===========================================
+// ==============================
+// =============
 
 
 // ===========================================
@@ -131,6 +132,8 @@ formAbsensi.addEventListener(
     function (e) {
 
         e.preventDefault();
+
+//tugas kamu disini
 
 
         // Ambil data dari form
