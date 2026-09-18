@@ -15,60 +15,60 @@ const emptyState = document.getElementById("emptyState");
 
 // Simpan data ke localStorage supaya tidak hilang saat refresh
 function simpanKeStorage() {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(dataAbsensi));
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(dataAbsensi));
 }
 
 // Tampilkan class badge warna sesuai status kehadiran
 function getStatusClass(status) {
-    const map = {
-        Hadir: "status-hadir",
-        Izin: "status-izin",
-        Sakit: "status-sakit",
-        Alpa: "status-alpa"
-    };
-    return map[status] || "";
+  const map = {
+    Hadir: "status-hadir",
+    Izin: "status-izin",
+    Sakit: "status-sakit",
+    Alpa: "status-alpa",
+  };
+  return map[status] || "";
 }
 
 // Render/tampilkan ulang seluruh data absensi ke dalam tabel
 function renderTabel() {
-    tbodyAbsensi.innerHTML = "";
+  tbodyAbsensi.innerHTML = "";
 
-    if (dataAbsensi.length === 0) {
-        emptyState.style.display = "block";
-        return;
-    }
-    emptyState.style.display = "none";
+  if (dataAbsensi.length === 0) {
+    emptyState.style.display = "block";
+    return;
+  }
+  emptyState.style.display = "none";
 
-    dataAbsensi.forEach((item, index) => {
-        const tr = document.createElement("tr");
-        tr.innerHTML = `
+  dataAbsensi.forEach((item, index) => {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
       <td>${index + 1}</td>
       <td>${item.nama}</td>
       <td>${item.tanggal}</td>
       <td><span class="status-badge ${getStatusClass(item.status)}">${item.status}</span></td>
       <td><button class="btn-hapus" onclick="hapusData(${index})">Hapus</button></td>
     `;
-        tbodyAbsensi.appendChild(tr);
-    });
+    tbodyAbsensi.appendChild(tr);
+  });
 }
 
 // Saat form disubmit: ambil input, validasi sederhana, simpan data baru
 formAbsensi.addEventListener("submit", function (e) {
-    e.preventDefault();
+  e.preventDefault();
 
-    const nama = document.getElementById("nama").value.trim();
-    const tanggal = document.getElementById("tanggal").value;
-    const status = document.getElementById("status").value;
+  const nama = document.getElementById("nama").value.trim();
+  const tanggal = document.getElementById("tanggal").value;
+  const status = document.getElementById("status").value;
 
-    if (!nama || !tanggal || !status) {
-        alert("Semua field wajib diisi!");
-        return;
-    }
+  if (!nama || !tanggal || !status) {
+    alert("Semua field wajib diisi!");
+    return;
+  }
 
-    dataAbsensi.push({ nama, tanggal, status });
-    simpanKeStorage();
-    renderTabel();
-    formAbsensi.reset();
+  dataAbsensi.push({ nama, tanggal, status });
+  simpanKeStorage();
+  renderTabel();
+  formAbsensi.reset();
 });
 
 // ===========================================
@@ -91,7 +91,9 @@ formAbsensi.addEventListener("submit", function (e) {
 //
 
 function hapusData(index) {
-    // TODO: lengkapi kode di sini
+  dataAbsensi.splice(index, 1);
+  simpanKeStorage();
+  renderTabel();
 }
 
 // Render tabel pertama kali saat halaman dibuka
