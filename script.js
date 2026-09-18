@@ -102,22 +102,11 @@ formAbsensi.addEventListener("submit", function(e) {
     formAbsensi.reset();
 });
 
+//tugas kamu disini
+
 
 // HAPUS DATA
 function hapusData(index) {
-
-    if (!confirm("Yakin ingin menghapus data ini?")) {
-        return;
-    }
-
-    // Hapus data
-    dataAbsensi.splice(index, 1);
-
-    // WAJIB simpan ulang setelah menghapus
-    simpanKeStorage();
-
-    // Update tabel
-    renderTabel();
 }
 
 
