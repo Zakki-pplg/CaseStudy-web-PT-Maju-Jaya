@@ -90,8 +90,11 @@ formAbsensi.addEventListener("submit", function (e) {
 //    ikut ter-update setelah data dihapus
 //
 
+
 function hapusData(index) {
-    dataAbsensi.splice(index, 1);// TODO: lengkapi kode di sini
+    dataAbsensi.splice(index, 1);
+    simpanKeStorage();
+    renderTabel();
 }
 
 // Render tabel pertama kali saat halaman dibuka
